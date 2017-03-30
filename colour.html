@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+        src="http://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"
+        ></script>
+    <style>
+
+      #videoBg{
+        position:fixed;
+        right:0;
+        bottom:0;
+        width: auto;
+        min-width: 100%;
+        height: auto;
+        min-height: 100%;
+        z-index: -100;
+        background: url(1.jpg) no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+      }
+      @media (max-width:800px) {
+        body{
+          background: url(1.jpg) no-repeat
+          fixed center #000;
+          background-size:cover;
+          }
+          #videoBg{
+            display: none;
+          }
+        }
+    </style>
+
+    <script>
+      // $(function(){
+      //     $('.name').on('click',function(){
+      //         var a = prompt("How Do You Do");
+      //         $('.name')[0].textContent = a;
+      //     });
+      // });
+
+      // var a = prompt("hungry");
+      // var b = document.getElementsByClassName('name');
+      // b[0].innerText = a;
+
+        var a = prompt("abdd");
+        $(function(){
+          $('.name')[0].textContent = a;
+        });
+
+      // $('.name')[0].textContent = a;
+    </script>
+
+  </head>
+  <body>
+    <video autoplay loop poster="1.jpg" id="videoBg">
+      <source src="1.mp4" type="video/mp4">
+      </video>
+      <h1 class="name">YAHO~!</h1>
+  </body>
+</html>
